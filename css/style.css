@@ -125,6 +125,8 @@ nav a:hover {
   overflow: scroll;
   height: 95vh;
   scroll-behavior: smooth;
+  border-left: 1px solid var(--primary-color);
+  padding-left: 20px;
 }
 
 .grid-left div {
@@ -132,7 +134,7 @@ nav a:hover {
 }
 
 section {
-  padding: 15px 0;
+  padding: 15px;
 }
 
 section .title {
@@ -140,26 +142,14 @@ section .title {
   color: var(--primary-color);
 }
 
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
 
-  .grid-right {
-    height: 100%;
-    overflow: auto;
-  }
-}
 
 /* Skills Section */
 .fas {
   color: var(--primary-color);
 }
 
-
 /* Contact Section*/
-
 form {
   display: grid;
   grid-gap: 10px;
@@ -194,4 +184,19 @@ form textarea {
   background-color: var(--primary-variant);
   color: var(--on-primary);
   cursor: pointer
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-right {
+    height: 100%;
+    overflow: auto;
+    border-left: none;
+    padding-top: 20px;
+    border-top: 1px solid var(--primary-color);
+  }
 }
