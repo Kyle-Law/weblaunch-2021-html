@@ -11,6 +11,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#theme {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 /* CSS Variables */
 /* Dark Light Mode */
 *:root {
@@ -97,12 +103,12 @@ nav a:hover {
 }
 
 .grid-left img {
-  box-shadow: var(--box-shadow);
-  border-radius: 100%;
-  width: 150px;
-  height: 150px;
-  object-position: 4px -3px;
-  object-fit: cover;
+    box-shadow: var(--box-shadow);
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-position: 0px -3px;
+    object-fit: cover;
 }
 
 .grid-left h1,
