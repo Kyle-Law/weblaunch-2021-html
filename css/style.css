@@ -89,6 +89,9 @@ nav a:hover {
   text-align: center;
 }
 
+.grid-left ul {
+  width: 100%;
+}
 
 .grid-right {
   overflow: scroll;
@@ -114,4 +117,29 @@ section {
     height: 100%;
     overflow: auto;
   }
+}
+
+/* Contact */
+
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.form-group{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-gap: 10px;
+}
+
+.btn-primary {
+  padding: 10px;
+  background: var(--primary-color);
+  color: var(--on-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-variant);
+  color: var(--on-primary);
+  cursor: pointer
 }

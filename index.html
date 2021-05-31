@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY RESUME</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body data-theme="dark">
+    <!--
     <nav>
         <a href="#education">Education</a>
         <a href="#extracurricular">Extracurricular</a>
@@ -18,6 +20,7 @@
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </nav>
+    -->
     <main class="grid-container">
         <div class="grid-left">
             <h1>KO JIA XIN</h1>
@@ -101,15 +104,16 @@
                 <h3><U>Skills</U></h3>
                 <dl>
                     <dt>Adobe Illustrator</dt>
-                    <dd>O O O O</dd>
+                    <dd><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></dd>
                     <dt>Adobe Premiere Pro</dt>
-                    <dd>O O O O</dd>
+                    <dd><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="far fa-star"></i></dd>
                     <dt>Python</dt>
-                    <dd>O O O</dd>
+                    <dd><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></dd>
                     <dt>Java</dt>
-                    <dd>O O O</dd>
+                    <dd><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></dd>
                     <dt>HTML & CSS</dt>
-                    <dd>O O O</dd>
+                    <dd><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></dd>
                 </dl>
             </section>
 
@@ -117,19 +121,20 @@
             <div id="contact">
                 <h3><u>Contact</u></h3>
 
-
                 <h3>Do you have any questions?</h3>
                 <form>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <label for="message">Message:</label>
+                    <textarea cols="20" rows="5" id="message" name="message" required></textarea>
 
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-
-                    <label for="message">Message:</label><br>
-                    <textarea cols="20" rows="5" id="message" name="message" required></textarea><br><br>
-
-                    <input type="submit" value="Submit">
+                    <input class="btn-primary" type="submit" value="Submit">
                 </form>
             </div>
         </div>
