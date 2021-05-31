@@ -75,9 +75,12 @@ nav a:hover {
 }
 
 .grid-left img {
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  border-radius: 5px;
+  box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+  border-radius: 100%;
   width: 150px;
+  height: 150px;
+  object-position: 4px -3px;
+  object-fit: cover;
 }
 
 .grid-left h1,
