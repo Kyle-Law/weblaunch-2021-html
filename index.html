@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY RESUME</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
@@ -9,11 +12,11 @@
 
 <body data-theme="dark">
     <nav>
-        <a href="education">Education</a>
-        <a href="extracurricular">Extracurricular</a>
-        <a href="honors-awards">Honors & Awards</a>
-        <a href="skills">Skills</a>
-        <a href="contact">Contact</a>
+        <a href="#education">Education</a>
+        <a href="#extracurricular">Extracurricular</a>
+        <a href="#honors-awards">Honors & Awards</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
     </nav>
     <main class="grid-container">
         <div class="grid-left">
@@ -30,9 +33,20 @@
                 <li>Chinese</li>
                 <li>Japanese</li>
             </div>
+            <ul>
+                <li>
+                    Phone <br> 012-345 6789
+                </li>
+                <li>
+                    Email <br> <a href="mailto:kojiaxin@hotmail.com" target="_blank">kojiaxin@hotmail.com</a>
+                </li>
+                <li>
+                    LinkedIn <br> <a href="https://www.linkedin.com/in/jia-xin-ko-732bb9167/">jia xin ko</a>
+                </li>
+            </ul>
         </div>
         <div class="grid-right">
-            <div>
+            <section id="education">
                 <h3><u>Education</u></h3>
                 <table style="width:100%">
                     <tr>
@@ -50,9 +64,9 @@
                         </td>
                     </tr>
                 </table>
-            </div>
+            </section>
 
-            <div>
+            <section id="extracurricular">
                 <h3><u>Extracurricular Activities</u></h3>
                 <table style="width:100%">
                     <tr>
@@ -69,9 +83,9 @@
                         <td><strong>Sunway University Chinese Orchestra</strong><br>Vice President<br>Score Manager</td>
                     </tr>
                 </table>
-            </div>
+            </section>
 
-            <div>
+            <section id="honors-awards">
                 <h3><U>Honors and Awards</U></h3>
                 <ol>
                     <li>Gold Award - He Yue International Online Instrumental Solo Competition 2020, 2021</li>
@@ -81,9 +95,9 @@
                     <li>Gold Award - Nanfeng International Competition 2017, 2018</li>
                     <li>Gold Award - Shan Yun Competition 2018</li>
                 </ol>
-            </div>
+            </section>
 
-            <div>
+            <section id="skills">
                 <h3><U>Skills</U></h3>
                 <dl>
                     <dt>Adobe Illustrator</dt>
@@ -97,36 +111,27 @@
                     <dt>HTML & CSS</dt>
                     <dd>O O O</dd>
                 </dl>
+            </section>
+
+
+            <div id="contact">
+                <h3><u>Contact</u></h3>
+
+
+                <h3>Do you have any questions?</h3>
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea cols="20" rows="5" id="message" name="message" required></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
             </div>
-
-
-
-            <h3><u>Contact</u></h3>
-            <ul>
-                <li>
-                    Phone <br> 012-345 6789
-                </li>
-                <li>
-                    Email <br> <a href="mailto:kojiaxin@hotmail.com" target="_blank">kojiaxin@hotmail.com</a>
-                </li>
-                <li>
-                    LinkedIn <br> <a href="https://www.linkedin.com/in/jia-xin-ko-732bb9167/">jia xin ko</a>
-                </li>
-            </ul>
-
-            <h3>Do you have any questions?</h3>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="message">Message:</label><br>
-                <textarea cols="20" rows="5" id="message" name="message" required></textarea><br><br>
-
-                <input type="submit" value="Submit">
-            </form>
         </div>
     </main>
 

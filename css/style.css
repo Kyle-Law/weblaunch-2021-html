@@ -92,11 +92,16 @@ nav a:hover {
 
 .grid-right {
   overflow: scroll;
-  height: 100vh;
+  height: 95vh;
+  scroll-behavior: smooth;
 }
 
 .grid-left div {
   width: 100%;
+}
+
+section {
+  padding: 15px 0;
 }
 
 /* On screens that are 992px or less, set the background color to blue */
