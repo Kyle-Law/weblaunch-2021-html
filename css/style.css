@@ -24,7 +24,7 @@ body {
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
 }
 
-[data-dark-light-mode-value="dark"] {
+body[data-theme="dark"] {
   --primary-color: rgb(150, 65, 255);
   --primary-variant: #6c63ff;
   --secondary-color: #03dac5;
@@ -56,13 +56,35 @@ nav a:hover {
   color: var(--on-background-alt);
 }
 
+/* Social Medias */
+
+.icons {
+  display: grid;
+  grid-gap: 10px;
+  justify-content: center;
+  grid-auto-flow: column;
+}
+
+.icons li {
+  list-style: none;
+}
+
+.icons li i {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.icons li i:hover {
+  color: var(--primary-variant);
+}
+
 /* main */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
   background-color: var(--background);
-  color: var(--text);
+  color: var(--on-background);
   padding: 10px;
 }
 
@@ -75,7 +97,7 @@ nav a:hover {
 }
 
 .grid-left img {
-  box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+  box-shadow: var(--box-shadow);
   border-radius: 100%;
   width: 150px;
   height: 150px;
@@ -107,6 +129,11 @@ section {
   padding: 15px 0;
 }
 
+section .title {
+  margin: 8px 0;
+  color: var(--primary-color);
+}
+
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
   .grid-container {
@@ -119,17 +146,36 @@ section {
   }
 }
 
-/* Contact */
+/* Skills Section */
+.fas {
+  color: var(--primary-color);
+}
+
+
+/* Contact Section*/
 
 form {
   display: grid;
   grid-gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--on-background);
+  margin: 10px 0;
 }
 
 .form-group{
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-gap: 10px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.form-group input {
+  padding: 5px;
+}
+
+form textarea {
+  padding: 5px;
 }
 
 .btn-primary {

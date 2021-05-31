@@ -8,10 +8,13 @@
     <title>MY RESUME</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body data-theme="dark">
+<body data-theme="light">
     <!--
     <nav>
         <a href="#education">Education</a>
@@ -21,6 +24,7 @@
         <a href="#contact">Contact</a>
     </nav>
     -->
+    <input type="checkbox" name="theme" id="theme">
     <main class="grid-container">
         <div class="grid-left">
             <h1>KO JIA XIN</h1>
@@ -36,21 +40,30 @@
                 <li>Chinese</li>
                 <li>Japanese</li>
             </div>
-            <ul>
+            <ul class="icons">
                 <li>
-                    Phone <br> 012-345 6789
+                    <i class="fab fa-whatsapp-square"></i>
                 </li>
                 <li>
-                    Email <br> <a href="mailto:kojiaxin@hotmail.com" target="_blank">kojiaxin@hotmail.com</a>
+                    <a href="mailto:kojiaxin@hotmail.com" target="_blank"><i class="far fa-envelope-open"></i></a>
                 </li>
                 <li>
-                    LinkedIn <br> <a href="https://www.linkedin.com/in/jia-xin-ko-732bb9167/">jia xin ko</a>
+                    <a href="https://www.linkedin.com/in/jia-xin-ko-732bb9167/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jia-xin-ko-732bb9167/" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jia-xin-ko-732bb9167/" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jia-xin-ko-732bb9167/" target="_blank"><i class="fab fa-twitter"></i></a>
                 </li>
             </ul>
         </div>
         <div class="grid-right">
             <section id="education">
-                <h3><u>Education</u></h3>
+                <h3 class="title"><u>Education</u></h3>
                 <table style="width:100%">
                     <tr>
                         <td>2020-03 to present</td>
@@ -70,7 +83,7 @@
             </section>
 
             <section id="extracurricular">
-                <h3><u>Extracurricular Activities</u></h3>
+                <h3 class="title"><u>Extracurricular Activities</u></h3>
                 <table style="width:100%">
                     <tr>
                         <td>2021-03 to present</td>
@@ -89,7 +102,7 @@
             </section>
 
             <section id="honors-awards">
-                <h3><U>Honors and Awards</U></h3>
+                <h3 class="title"><U>Honors and Awards</U></h3>
                 <ol>
                     <li>Gold Award - He Yue International Online Instrumental Solo Competition 2020, 2021</li>
                     <li>Jeffery Cheah Continuing Scholarship - 2020, 2021</li>
@@ -101,7 +114,7 @@
             </section>
 
             <section id="skills">
-                <h3><U>Skills</U></h3>
+                <h3 class="title"><U>Skills</U></h3>
                 <dl>
                     <dt>Adobe Illustrator</dt>
                     <dd><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></dd>
@@ -118,10 +131,10 @@
             </section>
 
 
-            <div id="contact">
-                <h3><u>Contact</u></h3>
+            <section id="contact">
+                <h3 class="title"><u>Contact</u></h3>
 
-                <h3>Do you have any questions?</h3>
+                <h5>Do you have any questions?</h5>
                 <form>
                     <div class="form-group">
                         <label for="name">Name:</label>
@@ -136,11 +149,18 @@
 
                     <input class="btn-primary" type="submit" value="Submit">
                 </form>
-            </div>
+            </section>
         </div>
     </main>
 
     <hr>
+
+    <script>
+        document.getElementById('theme').addEventListener('change', () => {
+            console.log('ello')
+            document.body.getAttribute('data-theme') === 'dark' ? document.body.setAttribute('data-theme', 'light') : document.body.setAttribute('data-theme', 'dark')
+        })
+    </script>
 
 
 
