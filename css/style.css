@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* CSS Variables */
+/* Dark Light Mode */
+*:root {
+  --primary-color: rgb(255, 92, 92);
+  --primary-variant: #ff2d2d;
+  --secondary-color: #1b9999;
+  --on-primary: rgb(250, 250, 250);
+  --on-background: rgb(66, 66, 66);
+  --on-background-alt: rgba(255, 255, 255, 0.7);
+  --background: rgb(255, 255, 255);
+  --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
+[data-dark-light-mode-value="dark"] {
+  --primary-color: rgb(150, 65, 255);
+  --primary-variant: #6c63ff;
+  --secondary-color: #03dac5;
+  --on-primary: #000;
+  --on-background: rgba(255, 255, 255, 0.9);
+  --on-background-alt: rgba(66, 66, 66, 0.7);
+  --background: #121212;
+}
+
+/* Custom CSS */
+/* nav */
+nav {
+  position: sticky;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-end;
+  top: 0;
+  background: var(--primary-color);
+  color: var(--on-background);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--on-background);
+  padding: 10px;
+}
+
+nav a:hover {
+  color: var(--on-background-alt);
+}
+
+/* main */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  background-color: var(--background);
+  color: var(--text);
+  padding: 10px;
+}
+
+.grid-left {
+  display: grid;
+  grid-template-rows: repeat(4,max-content);
+  place-items: center;
+  align-content: center;
+  grid-gap: 10px;
+}
+
+.grid-left img {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.grid-left h1,
+.grid-left h2 {
+  width: 100%;
+  text-align: center;
+}
+
+
+.grid-right {
+  overflow: scroll;
+  height: 100vh;
+}
+
+.grid-left div {
+  width: 100%;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-right {
+    height: 100%;
+    overflow: auto;
+  }
+}
